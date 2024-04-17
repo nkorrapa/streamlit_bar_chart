@@ -32,7 +32,3 @@ ax.bar(player_counts.event_team_type, player_counts.event, color = bar_colors)
 ax.set_ylabel('Shots')
 ax.set_title(player_name)
 st.pyplot(fig= fig)
-
-
-# matplotlib
-# bar graph x = home/away, pick by player, y = shots
