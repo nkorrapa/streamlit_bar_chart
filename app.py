@@ -10,7 +10,6 @@ def load_data(csv):
 st.header("hello")
 
 pbp = load_data("data/2023pbp.csv")
-teams = load_data("data/teams.csv")
 
 st.dataframe(pbp)
 
