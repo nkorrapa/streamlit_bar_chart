@@ -7,10 +7,11 @@ def load_data(csv):
     df=pd.read_csv(csv)
     return df
 
-st.header("hello")
+st.header("Welcome!")
+st.write("This graph will allow you to view the number of shots the selected player has made, comparing their home vs away stats!")
 
 pbp = load_data("data/2023pbp.csv")
-teams = load_data("data/teams.csv")
+
 
 st.dataframe(pbp)
 
