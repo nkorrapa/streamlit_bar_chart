@@ -12,7 +12,6 @@ st.write("This graph will allow you to view the number of shots the selected pla
 
 pbp = load_data("data/2023pbp.csv")
 
-
 st.dataframe(pbp)
 
 pbp = pbp.sort_values("event_player_1_name", ascending=True)
