@@ -18,7 +18,8 @@ pbp = pbp.sort_values("event_player_1_name", ascending=True)
 players = pbp['event_player_1_name']
 players = players.drop_duplicates(ignore_index=True)
 
-player_name = st.selectbox("Pick a player", players.to_list())
+player_name = st.selectbox("Pick a player", players.to_list(),index=None,
+   placeholder="Select a player from the list to checkout stats!!")
 
 player_shots = pbp[(pbp.event_player_1_name == player_name) & (pbp.event_type == 'SHOT')]
 
